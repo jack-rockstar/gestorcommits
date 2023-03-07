@@ -1,9 +1,13 @@
 {
   "name": "gestorcommits",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sirve para poder tener un CLI y facilitar a la hora de hacer commits",
   "main": "index.js",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jack-rockstar/gestorcommits"
+  },
   "scripts": {
     "start": "node src/index.js",
     "ggpull": "node src/index.js"
@@ -12,8 +16,20 @@
     "ggpull": "./src/ggpull.js",
     "cli": "./src/cli.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "node",
+    "gestorcommits",
+    "cli git",
+    "commits"
+  ],
+  "author": {
+    "name": "Jack Najarro Cuadros",
+    "email": "jacknajarro1@gmail.com"
+  },
+  "engines": {
+    "node": ">=18.11.0",
+    "npm": ">=8.19.2"
+  },
   "license": "ISC",
   "devDependencies": {
     "standard": "17.0.0"
