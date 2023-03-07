@@ -45,7 +45,7 @@ const commitMsg = await text({
     if (value.length === 0) {
       return colors.red('El mensaje no puede estar vacio')
     }
-    if (value.length > 25) {
+    if (value.length > 40) {
       return colors.red('El mensaje no puede tener mas de 25 caracteres')
     }
   }
@@ -110,4 +110,9 @@ if (!confirmBranch) exitProgram({ message: `Se rechazo la subida de los cambios 
 if (branch.length > 1) await gitCheckout({ branch: branchSelected })
 
 const [setPush, erroPush] = await trytm(gitPushOrigin({ branch: branchSelected }))
-console.log(setPush, erroPush)
+
+if (!erroPush) {
+  outro(
+    colors.green('🛫 se subieron cambios al repositorio. ¡Gracias por usar al asistente 🐛💯!')
+  )
+}
