@@ -1,11 +1,16 @@
 {
-  "name": "miducon",
+  "name": "gestorcommits",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "ggpull": "node src/index.js"
+  },
+  "bin": {
+    "ggpull": "./src/ggpull.js",
+    "cli": "./src/cli.js"
   },
   "keywords": [],
   "author": "",
