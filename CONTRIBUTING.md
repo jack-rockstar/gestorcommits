@@ -1,4 +1,4 @@
-# Contribuyendo a [Nombre del proyecto]
+# Contribuyendo a [GESTOR DE COMMITS]
 
 ## Mensajes de commit
 
