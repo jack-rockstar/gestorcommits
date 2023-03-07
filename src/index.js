@@ -90,7 +90,7 @@ const [branch, erroBranch] = await trytm(gitBranch())
 let branchSelected
 
 if (branch.length > 0) {
-  branchSelected = await multiselect({
+  branchSelected = await select({
     message: colors.cyan('Selecciona la rama donde quieres subir los cambios: '),
     options: branch.map(branch => ({
       value: branch.replaceAll('*', '').trim(),
