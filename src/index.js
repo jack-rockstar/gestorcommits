@@ -37,6 +37,7 @@ const commitType = await select({
     label: `${value.emoji} ${key.padEnd(8, ' ')} . ${value.description}`
   }))
 })
+
 if (isCancel(commitType)) exitProgram({ message: 'No hay archivos para commitear' })
 
 const commitMsg = await text({
