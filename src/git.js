@@ -13,6 +13,7 @@ export async function getChangedFiles() {
 }
 
 export async function getStagedFiles() {
+  console.log('HOLA MUNDO')
   const { stdout } = await execAsync('git diff --cached --name-only')
   return cleanStdout(stdout)
 }
